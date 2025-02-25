@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.todo {
+  height: 30%;
+}
+
+.scrollableView {
+    height: 68%;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-block: 2%;
+}
+
+
+
+
+.homePage {
+  height: 100%;
+  width: 100%;
+}
