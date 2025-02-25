@@ -9,7 +9,7 @@ function TodoForm({ handleOnSubmit }) {
         className="todo"
         onSubmit={(e) => {
             e.preventDefault()
-            handleOnSubmit({ type: "ADD", payload: form.current[0].value })}}>
+            handleOnSubmit({ type: "ADD", payload: form.current[0] })}}>
         <input type="text" />
         <input type="submit" />
     </form>

@@ -14,10 +14,11 @@ function toggle(state, action) {
             newState.push({
                 "userId": addNew.userId,
                 "id": addNew.id + 1,
-                "title": action.payload,
+                "title": action.payload.value,
                 "edit": false,
                 "completed": false
             })
+            action.payload.value = ""
             return newState
         case "EDIT":
             newState[action.index].edit = !newState[action.index].edit
